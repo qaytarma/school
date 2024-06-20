@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FANCYBOX -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <!-- SELECT2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        
+        <header class="header">
+            <div class="header__clr container-fluid header__news-color">
+                <div class="container">
+                    <div class="header__top">
+                        <a class="header__logo" href="./index.html">
+                            <img class="header__logo-img" src="./images/dist/header-logo.svg" alt="logo">
+                        </a>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__list-item">
+                                    <a class="nav__list-link" href="./index.html">Головна</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__list-link" href="./admission.html">Прийом учнів</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__list-link" href="./news.html">Новини</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__list-link active" href="#!">Розклад</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__list-link" href="./gallery.html">Галерея</a>
+                                </li>
+                                <li class="nav__list-item">
+                                    <a class="nav__list-link" href="./contact.html">Контакти</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__intro container-fluid header--most">
+                <h3 class="gallery__title">Розклад</h3>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="timetable container-fluid">
+                <div class="container">
+                    <form class="timetable__form" action="#">
+                        <select class="timetable__inner js-example-basic-single" name="state" id="" style="width: 180px;">
+                            <option class="timetable__item" value="1" data-option="1" selected="select">1 клас</option>
+                            <option class="timetable__item" value="2" data-option="2">2 клас</option>
+                            <option class="timetable__item" value="3" data-option="3">3 клас</option>
+                            <option class="timetable__item" value="4" data-option="4">4 клас</option>
+                        </select>
+                    </form>
+                    <div class="timetable__info">
+                        <div class="timetable__block timetable__block-active" data-info="1">
+                            <h3 class="timetable__title">1 клас</h3>
+                            <table class="timetable__table">
+                                <thead class="timetable__thead">
+                                    <tr class="timetable__tr">
+                                        <th class="timetable__td timetable__td-title">Час</th>
+                                        <th class="timetable__td timetable__td-title">ПН</th>
+                                        <th class="timetable__td timetable__td-title">ВТ</th>
+                                        <th class="timetable__td timetable__td-title">СР</th>
+                                        <th class="timetable__td timetable__td-title">ЧТ</th>
+                                        <th class="timetable__td timetable__td-title">ПТ</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="timetable__tbody">
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">07:40 - 08:20</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Українська мова</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Фізкультура</td>
+                                        <td class="timetable__td">Музика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">08:20 - 09:00</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Українська література</td>
+                                        <td class="timetable__td">Природознавство</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">09:00 - 09:40</td>
+                                        <td class="timetable__td">Фізика</td>
+                                        <td class="timetable__td">Хімія</td>
+                                        <td class="timetable__td">Малювання</td>
+                                        <td class="timetable__td">Астрономія</td>
+                                        <td class="timetable__td">Географія</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">10:00 - 10:40</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                        <td class="timetable__td">Музика</td>
+                                        <td class="timetable__td">Фізична культура</td>
+                                        <td class="timetable__td">Інформатика</td>
+                                        <td class="timetable__td">Біологія</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">11:20 - 12:00</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Французька мова</td>
+                                        <td class="timetable__td">Інформатика</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Фізика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">12:30 - 13:10</td>
+                                        <td class="timetable__td">Геометрія</td>
+                                        <td class="timetable__td">Українська література</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Хімія</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">12:30 - 14:10</td>
+                                        <td class="timetable__td">Біологія</td>
+                                        <td class="timetable__td">Фізика</td>
+                                        <td class="timetable__td">Географія</td>
+                                        <td class="timetable__td">Малювання</td>
+                                        <td class="timetable__td">Французька мова</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">14:10 - 15:50</td>
+                                        <td class="timetable__td">Астрономія</td>
+                                        <td class="timetable__td">Фізична культура</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Музика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">15:10 - 16:50</td>
+                                        <td class="timetable__td">Українська мова</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Біологія</td>
+                                        <td class="timetable__td">Геометрія</td>
+                                        <td class="timetable__td">Фізика</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="timetable__block" data-info="2">
+                            <h3 class="timetable__title">2 клас</h3>
+                            <table class="timetable__table">
+                                <thead class="timetable__thead">
+                                    <tr class="timetable__tr">
+                                        <th class="timetable__td timetable__td-title">Час</th>
+                                        <th class="timetable__td timetable__td-title">ПН</th>
+                                        <th class="timetable__td timetable__td-title">ВТ</th>
+                                        <th class="timetable__td timetable__td-title">СР</th>
+                                        <th class="timetable__td timetable__td-title">ЧТ</th>
+                                        <th class="timetable__td timetable__td-title">ПТ</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="timetable__tbody">
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">07:40 - 08:20</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Українська мова</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Фізкультура</td>
+                                        <td class="timetable__td">Музика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">08:20 - 09:00</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Українська література</td>
+                                        <td class="timetable__td">Природознавство</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">09:00 - 09:40</td>
+                                        <td class="timetable__td">Фізика</td>
+                                        <td class="timetable__td">Хімія</td>
+                                        <td class="timetable__td">Малювання</td>
+                                        <td class="timetable__td">Астрономія</td>
+                                        <td class="timetable__td">Географія</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">10:00 - 10:40</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                        <td class="timetable__td">Музика</td>
+                                        <td class="timetable__td">Фізична культура</td>
+                                        <td class="timetable__td">Інформатика</td>
+                                        <td class="timetable__td">Біологія</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">11:20 - 12:00</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Французька мова</td>
+                                        <td class="timetable__td">Інформатика</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Фізика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">12:30 - 13:10</td>
+                                        <td class="timetable__td">Геометрія</td>
+                                        <td class="timetable__td">Українська література</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Хімія</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">12:30 - 14:10</td>
+                                        <td class="timetable__td">Біологія</td>
+                                        <td class="timetable__td">Фізика</td>
+                                        <td class="timetable__td">Географія</td>
+                                        <td class="timetable__td">Малювання</td>
+                                        <td class="timetable__td">Французька мова</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">14:10 - 15:50</td>
+                                        <td class="timetable__td">Астрономія</td>
+                                        <td class="timetable__td">Фізична культура</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Музика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">15:10 - 16:50</td>
+                                        <td class="timetable__td">Українська мова</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Біологія</td>
+                                        <td class="timetable__td">Геометрія</td>
+                                        <td class="timetable__td">Фізика</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="timetable__block" data-info="3">
+                            <h3 class="timetable__title">3 клас</h3>
+                            <table class="timetable__table">
+                                <thead class="timetable__thead">
+                                    <tr class="timetable__tr">
+                                        <th class="timetable__td timetable__td-title">Час</th>
+                                        <th class="timetable__td timetable__td-title">ПН</th>
+                                        <th class="timetable__td timetable__td-title">ВТ</th>
+                                        <th class="timetable__td timetable__td-title">СР</th>
+                                        <th class="timetable__td timetable__td-title">ЧТ</th>
+                                        <th class="timetable__td timetable__td-title">ПТ</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="timetable__tbody">
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">07:40 - 08:20</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Українська мова</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Фізкультура</td>
+                                        <td class="timetable__td">Музика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">08:20 - 09:00</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Українська література</td>
+                                        <td class="timetable__td">Природознавство</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">09:00 - 09:40</td>
+                                        <td class="timetable__td">Фізика</td>
+                                        <td class="timetable__td">Хімія</td>
+                                        <td class="timetable__td">Малювання</td>
+                                        <td class="timetable__td">Астрономія</td>
+                                        <td class="timetable__td">Географія</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">10:00 - 10:40</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                        <td class="timetable__td">Музика</td>
+                                        <td class="timetable__td">Фізична культура</td>
+                                        <td class="timetable__td">Інформатика</td>
+                                        <td class="timetable__td">Біологія</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">11:20 - 12:00</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Французька мова</td>
+                                        <td class="timetable__td">Інформатика</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Фізика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">12:30 - 13:10</td>
+                                        <td class="timetable__td">Геометрія</td>
+                                        <td class="timetable__td">Українська література</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Хімія</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">12:30 - 14:10</td>
+                                        <td class="timetable__td">Біологія</td>
+                                        <td class="timetable__td">Фізика</td>
+                                        <td class="timetable__td">Географія</td>
+                                        <td class="timetable__td">Малювання</td>
+                                        <td class="timetable__td">Французька мова</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">14:10 - 15:50</td>
+                                        <td class="timetable__td">Астрономія</td>
+                                        <td class="timetable__td">Фізична культура</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Музика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">15:10 - 16:50</td>
+                                        <td class="timetable__td">Українська мова</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Біологія</td>
+                                        <td class="timetable__td">Геометрія</td>
+                                        <td class="timetable__td">Фізика</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="timetable__block" data-info="4">
+                            <h3 class="timetable__title">4 клас</h3>
+                            <table class="timetable__table">
+                                <thead class="timetable__thead">
+                                    <tr class="timetable__tr">
+                                        <th class="timetable__td timetable__td-title">Час</th>
+                                        <th class="timetable__td timetable__td-title">ПН</th>
+                                        <th class="timetable__td timetable__td-title">ВТ</th>
+                                        <th class="timetable__td timetable__td-title">СР</th>
+                                        <th class="timetable__td timetable__td-title">ЧТ</th>
+                                        <th class="timetable__td timetable__td-title">ПТ</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="timetable__tbody">
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">07:40 - 08:20</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Українська мова</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Фізкультура</td>
+                                        <td class="timetable__td">Музика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">08:20 - 09:00</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Українська література</td>
+                                        <td class="timetable__td">Природознавство</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">09:00 - 09:40</td>
+                                        <td class="timetable__td">Фізика</td>
+                                        <td class="timetable__td">Хімія</td>
+                                        <td class="timetable__td">Малювання</td>
+                                        <td class="timetable__td">Астрономія</td>
+                                        <td class="timetable__td">Географія</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">10:00 - 10:40</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                        <td class="timetable__td">Музика</td>
+                                        <td class="timetable__td">Фізична культура</td>
+                                        <td class="timetable__td">Інформатика</td>
+                                        <td class="timetable__td">Біологія</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">11:20 - 12:00</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Французька мова</td>
+                                        <td class="timetable__td">Інформатика</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Фізика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">12:30 - 13:10</td>
+                                        <td class="timetable__td">Геометрія</td>
+                                        <td class="timetable__td">Українська література</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Хімія</td>
+                                        <td class="timetable__td">Трудове навчання</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">12:30 - 14:10</td>
+                                        <td class="timetable__td">Біологія</td>
+                                        <td class="timetable__td">Фізика</td>
+                                        <td class="timetable__td">Географія</td>
+                                        <td class="timetable__td">Малювання</td>
+                                        <td class="timetable__td">Французька мова</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">14:10 - 15:50</td>
+                                        <td class="timetable__td">Астрономія</td>
+                                        <td class="timetable__td">Фізична культура</td>
+                                        <td class="timetable__td">Математика</td>
+                                        <td class="timetable__td">Англійська мова</td>
+                                        <td class="timetable__td">Музика</td>
+                                    </tr>
+                                    <tr class="timetable__tr">
+                                        <td class="timetable__td">15:10 - 16:50</td>
+                                        <td class="timetable__td">Українська мова</td>
+                                        <td class="timetable__td">Історія</td>
+                                        <td class="timetable__td">Біологія</td>
+                                        <td class="timetable__td">Геометрія</td>
+                                        <td class="timetable__td">Фізика</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="footer container-fluid">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item">
+                        <a class="footer__item-link" href="./index.html#header-top">
+                            <img class="footer__item-img" src="./images/dist/header-logo.svg" alt="logo">
+                        </a>
+                        <p class="footer__item-address">
+                            вул. Лозинка, 1а, Мокротин, Львівська область, 80355.
+                        </p>
+                        <a class="footer__item-email" href="mailto:mokrotynschool@gmail.com">mokrotynschool@gmail.com</a>
+                    </div>
+
+                    <div class="footer__social">
+                        <h4 class="footer__title">Соціальні мережі</h4>
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#!">
+                                    <img class="footer__social-img--first" src="./images/dist/footer-twitter.svg" alt="social twitter">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#!">
+                                    <img class="footer__social-img--second" src="./images/dist/footer-facebook.svg" alt="social facebook">
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#!">
+                                    <img class="footer__social-img--third" src="./images/dist/footer-instagram.svg" alt="social instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    Copyright © Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/main.min.js"></script>
+
+</body>
+</html>
